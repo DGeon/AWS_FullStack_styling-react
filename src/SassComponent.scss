@@ -1,0 +1,45 @@
+@import "./styles/utils.scss";
+
+.SassComponent{
+  display: flex;
+  .box{//일반 css에서는 .SassComponent .box와 마찬가지  SassComponent안에 box속성이고 box속성과 red가 같이 있을때 적용
+    background : red;
+    cursor: pointer;
+    //서서히 변함
+    transition : all 0.3s ease-in; 
+    &.red{
+      //.red클래스가 .box 와 함께 사용되었을 때
+      background-color: $red;
+      @include square(1);
+    }
+    &.orange{
+      background: $orange;
+      @include square(2);
+    }
+    &.yellow{
+      background: $yellow;
+      @include square(3);
+    }
+    &.green{
+      background: $green;
+      @include square(4);
+    }
+    &.blue{
+      background: $blue;
+      @include square(5);
+    }
+    &.indigo{
+      background: $indigo;
+      @include square(6);
+    }
+    &.violet{
+      background: $violet;
+      @include square(7);
+    }
+    &:hover{
+      //.box에 마우스를 올렸을때
+      background: black;
+    }
+  }
+}
+
