@@ -19,14 +19,44 @@
 
 // export default App;
 
+// import React, { Component } from "react";
+// import SassComponent from "./SassComponent";
+
+// class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <SassComponent />
+//       </div>
+//     );
+//   }
+// }
+
+// export default App;
+
+//--------------------0510 p233
+// import React, { Component } from "react";
+// import CSSModule from "./CSSModule";
+// class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <CSSModule />
+//       </div>
+//     );
+//   }
+// }
+
+// export default App;
+
 import React, { Component } from "react";
-import SassComponent from "./SassComponent";
+import StyledComponent from "./StyledComponent";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <SassComponent />
+        <StyledComponent />
       </div>
     );
   }
