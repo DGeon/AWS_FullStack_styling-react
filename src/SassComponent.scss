@@ -1,5 +1,13 @@
+@import 'utils';
+@import '~include-media/dist/include-media';
+@import '~open-color/open-color';
+
 .SassComponent{
   display: flex;
+  background: $oc-gray-2;
+  @include media('<768px'){
+    background: $oc-gray-9;
+  }
   .box{//일반 css에서는 .SassComponent .box와 마찬가지  SassComponent안에 box속성이고 box속성과 red가 같이 있을때 적용
     background : red;
     cursor: pointer;

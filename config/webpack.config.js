@@ -520,9 +520,8 @@ module.exports = function (webpackEnv) {
                 loader: require.resolve("sass-loader"),
                 options: {
                   sassOptions: {
-                    includeParths: [paths.addSrc + "/styles"],
+                    includePaths: [paths.appSrc + "/styles"],
                   },
-                  additionalData: "@import 'utils';",
                 },
               }),
               // Don't consider CSS imports dead code even if the
